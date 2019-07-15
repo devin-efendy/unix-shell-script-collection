@@ -1,0 +1,21 @@
+#!/bin/bash
+
+ARGS="$1"
+
+if [ $ARGS == "learn" ]
+then
+    open "https://universityofmanitoba.desire2learn.com/d2l/home"
+elif [ $ARGS == "aurora" ]
+then
+    open "https://aurora.umanitoba.ca/banprod/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu&msg=WELCOME+Welcome,+Devin+S.+Efendy,+to+Aurora!Apr+07,+201909%3A39+pm"
+elif [ $ARGS == "myumanitoba" ]
+then
+    open "https://outlook.office.com/mail/inbox"
+elif [ $ARGS == "all" ]
+then
+    open "https://universityofmanitoba.desire2learn.com/d2l/home"
+    open "https://aurora.umanitoba.ca/banprod/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu&msg=WELCOME+Welcome,+Devin+S.+Efendy,+to+Aurora!Apr+07,+201909%3A39+pm"
+    open "https://outlook.office.com/mail/inbox"
+else
+    echo "Give a valid argument (learn, aurora, myumanitoba, all)."
+fi

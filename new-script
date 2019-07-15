@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SCRIPT_NAME="$1"
+
+touch ~/bin/$SCRIPT_NAME
+echo "#!/bin/bash" >> ~/bin/$SCRIPT_NAME
+chmod u+x ~/bin/$SCRIPT_NAME
+
+echo "Created new script $SCRIPT_NAME at ~/bin/"

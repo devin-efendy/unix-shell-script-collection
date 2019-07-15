@@ -1,0 +1,12 @@
+#!/bin/bash
+ARGS="$1"
+
+if [ "$ARGS" == "" ] || [ "$ARGS" == "on" ] || [ "$ARGS" == "1" ]
+then
+    blueutil -p 0
+    networksetup -setairportpower Wi-Fi off
+elif [ "$ARGS" == "off" ] || [ "$ARGS" == "0" ]
+then
+    blueutil -p 1
+    networksetup -setairportpower Wi-Fi on
+fi
